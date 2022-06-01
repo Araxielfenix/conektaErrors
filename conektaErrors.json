@@ -1254,188 +1254,190 @@
         protocol:
             no_https: "La conexión tiene que ser segura en producción"
             no_https_purchaser: "La conexión tiene que ser segura en producción"
-        processing:
-            tokenization:
-            did_not_write_to_dynamo_error: "Hubo un problema al procesar el pago"
-            subscription:
-            cannot_pause: "No se puede pausar la suscripción"
-            cannot_pause_purchaser: "No se puede pausar la suscripción.",
-            antifraud:
-            connection_error: "Hubo un problema durante la conexión al servicio antifraude.",
-            connection_error_purchaser: "Hubo un problema durante la conexión al servicio antifraude.",
-            connection_error_failure_code: "antifraud_connection_error"
-            charge:
-            card_payment:
-                processing_error: "Un error ha ocurrido al tratar de procesar la tarjeta.",
-                processing_error_purchaser: "Un error ha ocurrido al tratar de procesar la tarjeta.",
-                amex_not_supported: "Pagos de AMEX no están soportados aún pero lo serán pronto.",
-                amex_not_supported_purchaser: "Pagos de AMEX no están soportados aún pero lo serán pronto.",
-                bbva_visa: "BBVA Bancomer no permite tarjetas de débito Visa para compras en línea.",
-                bbva_visa_purchaser: "BBVA Bancomer no permite tarjetas de débito Visa para compras en línea.",
-                banorte_visa: "Banorte no permite tarjetas de débito Visa para compras en línea.",
-                banorte_visa_purchaser: "Banorte no permite tarjetas de débito Visa para compras en línea.",
-                ixe_debito: "IXE no permite tarjetas de débito para compras en línea.",
-                ixe_debito_purchaser: "IXE no permite tarjetas de débito para compras en línea.",
-                azteca_credito: "Banco Azteca no permite tarjetas de crédito para compras en línea.",
-                azteca_credito_purchaser: "Banco Azteca no permite tarjetas de crédito para compras en línea.",
-                inbursa_credito: "Grupo Financiero Inbursa no permite tarjetas de crédito para compras en línea.",
-                inbursa_credito_purchaser: "Grupo Financiero Inbursa no permite tarjetas de crédito para compras en línea.",
-                suspicious_behaviour: "Este cargo ha sido declinado porque el comportamiento del comprador es sospechoso.",
-                suspicious_behaviour_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
-            cash_payment:
-                barcode: "No se pudo generar el código de barras.",
-                barcode_purchaser: "No se pudo generar el código de barras.",
-            oxxo_payment:
-                service_unavailable: "OXXO no pudo generar el código de barras.",
-                service_unavailable_purchaser: "OXXO no pudo generar el código de barras, por favor intenta más tarde.",
-                merchant_not_available: "Cliente no disponible"
-                merchant_not_available_purchaser: "Cliente no disponible"
-                merchant_after_hours: "Fuera del horario de servicio"
-                merchant_after_hours_purchaser: "Fuera del horario de servicio"
-                reference_not_found: "Referencia no encontrada"
-                reference_not_found_purchaser: "Referencia no encontrada"
-                inactive_reference: "Referencia inactiva"
-                inactive_reference_purchaser: "Referencia inactiva"
-                canceled_reference: "Referencia cancelada"
-                canceled_reference_purchaser: "Referencia cancelada"
-                user_blocked: "Usuario bloqueado"
-                user_blocked_purchaser: "Usuario bloqueado"
-                invalid_amount: "Monto invalido"
-                invalid_amount_purchaser: "Monto invalido"
-                not_authorized: "No autorizado por el cliente"
-                not_authorized_purchaser: "No autorizado por el cliente"
-            oxxo_recurrent:
-                not_payable: "La petición fue considerada como no pagable.",
-                not_payable_purchaser: "La petición fue considerada como no pagable.",
-                not_reversable: "El cargo no puede ser reversado.",
-                not_reversable_purchaser: "El cargo no puede ser reversado.",
-            spei_payment:
-                charge_is_already_paid: "El pago no pudo ser procesado porque el cargo ya ha sido pagado.",
-                charge_is_expired: "El pago no pudo ser procesado porque el cargo ya ha expirado.",
-                charge_is_canceled: "El pago no pudo ser procesado porque el cargo fue cancelado.",
-                invalid_amount: "El pago no pudo ser procesado porque el monto es invalido.",
-            payment:
-            general_failure: "El pago no pudo ser creado.",
-            general_failure_purchaser: "El pago no pudo ser creado.",
-            general_failure: "El objeto %{entity} no pudo ser creado o guardado.",
-            general_failure_purchaser: "El pago no pudo ser creado.",
-            chargeback_destroyed: "El contracargo para el cargo %{charge} ya está en revisión y no puede ser eliminado.",
-            chargeback_destroyed_purchaser: "El contracargo para el cargo %{charge} ya está en revisión y no puede ser eliminado.",
-            chargeback_due_date: "La fecha para proveer evidencia para este contracargo ha expirado y no se puede realizar más actualizaciones.",
-            chargeback_due_date_purchaser: "La fecha para proveer evidencia para este contracargo ha expirado y no se puede realizar más actualizaciones.",
-            request:
-            json: "JSON mal formado.",
-            json_purchaser: "Hubo un error de procesamiento.",
-            tokenization:
-            no_js_agent: "Solamente podemos procesar datos de tarjetas que han sido tokenizadas o que provengan de sitios seguros que cumplan los estándares de PCI. Si su sitio cumple con los estándares, envíe una copia de su certificado PCI a contacto@conekta.io y pida acceso.",
-            no_js_agent_purchaser: "Solamente podemos procesar datos de tarjetas que han sido tokenizadas o que provengan de sitios seguros que cumplan los estándares de PCI.",
-            used: "El token ya ha sido utilizado.",
-            used_purchaser: "La tarjeta no pudo ser procesada.",
-            charge_operations:
-            already_paid: "La referencia ya fue pagada.",
-            already_paid_purchaser: "La referencia ya fue pagada.",
-            canceled: "Referencia cancelada, favor de obtener una nueva"
-            canceled_purchaser: "Referencia cancelada, favor de obtener una nueva"
-            general_failure: "El cargo no existe o no es apto para esta operación.",
-            general_failure_purchaser: "El cargo no existe o no es apto para esta operación.",
-            invalid_operation: "La operación es inválida o no existe.",
-            invalid_operation_purchaser: "La operación es inválida o no existe.",
-            refund:
-                pending_payment: "El cargo no ha sido pagado, y por eso no puede ser reembolsado.",
-                pending_payment_purchaser: "El cargo no ha sido pagado, y por eso no puede ser reembolsado.",
-                charged_back: "Este cargo tiene un contracargo y no puede ser reembolsado.",
-                charged_back_purchaser: "Este cargo tiene un contracargo y no puede ser reembolsado.",
-                refunded: "El cargo ya fue reembolsado.",
-                refunded_purchaser: "El cargo ya fue reembolsado.",
-                preauthorized: "El cargo está preautorizado, utiliza "void" para cancelarla.",
-                preauthorized_purchaser: "El cargo está preautorizado, utiliza "void" para cancelarla.",
-                amount_exceeds_charge_value: "El monto a reembolsar excede el monto del cargo.",
-                amount_exceeds_charge_value_purchaser: "El monto a reembolsar excede el monto del cargo.",
-                too_old: "El cargo es demasiado viejo para hacer reembolsado.",
-                too_old_purchaser: "El cargo es demasiado viejo para hacer reembolsado.",
-                partial_international: "Devoluciones parciales no pueden ser realizados para tarjetas internacionales.",
-                partial_international_purchaser: "Devoluciones parciales no pueden ser realizados para tarjetas internacionales.",
-                insufficient_balance: "No tienes saldo sufficiente para realizar este devolución.",
-                insufficient_balance_purchaser: "No tienes saldo sufficiente para realizar este devolución.",
-            company:
-            already_active: "Esta empresa ya está activada.",
-            already_active_purchaser: "Esta empresa ya está activada.",
-            not_yet_verified: "Esta empresa aún no ha sido verificada.",
-            not_yet_verified_purchaser: "Esta empresa aún no ha sido verificada.",
-            fiscal_info:
-                contracts: "No se han subido los contratos firmados de esta empresa.",
-                contracts_purchaser: "No se han subido los contratos firmados.",
-        resource_not_found:
-            general_failure: "El recurso no ha sido encontrado.",
-            general_failure_purchaser: "El recurso no ha sido encontrado.",
-            unknown_route: "La ruta de tu petición no ha sido encontrada.",
-            unknown_route_purchaser: "La ruta de tu petición no ha sido encontrada.",
-            entity: "El objeto %{entity} no pudo ser encontrado.",
-            entity_purchaser: "El recurso no ha sido encontrado.",
-            relation: "El objeto %{key} no pudo ser encontrado para %{value}.",
-            relation_purchaser: "El recurso no ha sido encontrado.",
-            model: "El modelo %{model} no pudo ser encontrado.",
-            model_purchaser: "El recurso no ha sido encontrado.",
-            event: "El evento %{event} no fue encontrado.",
-            event_purchaser: "El recurso no ha sido encontrado.",
-            plan: "El plan %{entity} no pudo ser encontrado.",
-            plan_purchaser: "El plan no pudo ser encontrado.",
-            customer_card: "El cliente %{customer} no tiene la tarjeta %{card}.",
-            customer_card_purchaser: "El cliente no ha sido encontrado.",
-            charge: "El cargo %{charge} no ha sido encontrado.",
-            charge_purchaser: "El cargo no ha sido encontrado.",
-            customer: "El cliente %{customer} no ha sido encontrado.",
-            customer_purchaser: "El cliente no ha sido encontrado.",
-            card_customer: "La tarjeta %{card} no fue encontrada para el cliente %{customer}.",
-            card_customer_purchaser: "La tarjeta no ha sido encontrada.",
-            card_payment: "El cargo de la tarjeta %{card_payment} no pudo ser encontrado.",
-            card_payment_purchaser: "El cargo de la tarjeta especificada no ha sido encontrado.",
-            subscription: "La suscripción para el cliente %{customer} no pudo ser encontrada.",
-            subscription_purchaser: "La suscripción no ha sido encontrada.",
-            chargeback: "El contracargo para el cargo %{charge} no fue encontrado.",
-            chargeback_purchaser: "El contracargo no ha sido encontrado.",
-            payee: "El beneficiario %{payee} no fue encontrado.",
-            payee_purchaser: "El beneficiario no ha sido encontrado.",
-            chargeback_file: "El archivo %{chargeback_file} del cargo %{charge} no fue encontrado.",
-            chargeback_file_purchaser: "El archivo no ha sido encontrado.",
-            company_file: "El archivo %{company_file} no fue encontrado.",
-            company_file_purchaser: "El archivo no ha sido encontrado.",
-        devise:
-        mailer:
-            confirmation_instructions:
-            subject: "Confirma tu nuevo correo de acceso en Conekta"
-        webhook:
-        error:
-            communication_error_message_title: "Error de comunicación con webhook"
-            communication_error_message_body: "No podemos establecer la conexión con el webhook: %{webhook_url}"
-            webhook_not_found: "Webhook no esta suscrito a este evento.",
-            webhook_not_found_purchaser: "Webhook no esta suscrito a este evento.",
-        month_numbers:
-        "1": "Enero"
-        "2": "Febrero"
-        "3": "Marzo"
-        "4": "Abril"
-        "5": "Mayo"
-        "6": "Junio"
-        "7": "Julio"
-        "8": "Agosto"
-        "9": "Septiembre"
-        "10": "Octubre"
-        "11": "Noviembre"
-        "12": "Diciembre"
-        antifraud:
-        declination_rules:
-            velocity: "El usuario está realizando compras a muy alta velocidad.",
-            chargebacks: "El usuario está asociado a uno o más contracargos en la plataforma de Conekta.",
-            many_cards: "El usuario intentó comprar con un número  elevado de tarjetas de crédito y/o débito"
-            multiple_data: "El usuario está asociado a varios números telefónicos y/o cuentas de correo electrónico.",
-            multiple_devices: "El usuario está asociado a un número inusualmente alto de dispositivos electrónicos desde los cuales ha intentado realizar pagos en la plataforma de Conekta.",
-            invalid_email: "El usuario está utilizando un correo o dominio de correo electrónico que es anónimo, desechable o inexistente.",
-            riskbin: "El usuario ha utilizado un tipo de tarjeta que está asociado a intentos de fraude en la plataforma de Conekta.",
-            ip_address: "El usuario ha utilizado una IP asociada a intentos de fraude en la plataforma de Conekta.",
-            bad_address: "El usuario ha utilizado una dirección de envío asociada a intentos de fraude o contracargos en la plataforma de Conekta.",
-            blacklist: "El usuario está registrado en la base de datos de usuarios fraudulentos o sospechosos de la plataforma de Conekta (blacklist).",
-            score: "El usuario tiene un comportamiento sospechoso de fraude.",
-            test_card: "El usuario está utilizando una tarjeta de crédito o débito de prueba en modo producción.",
+        "processing":{
+            "tokenization":{
+            "did_not_write_to_dynamo_error": "Hubo un problema al procesar el pago"}}
+            "subscription":{
+            "cannot_pause": "No se puede pausar la suscripción",
+            "cannot_pause_purchaser": "No se puede pausar la suscripción.",}
+            "antifraud":{
+            "connection_error": "Hubo un problema durante la conexión al servicio antifraude.",
+            "connection_error_purchaser": "Hubo un problema durante la conexión al servicio antifraude.",
+            "connection_error_failure_code": "antifraud_connection_error",}
+            "charge":
+            "card_payment":{
+                "processing_error": "Un error ha ocurrido al tratar de procesar la tarjeta.",
+                "processing_error_purchaser": "Un error ha ocurrido al tratar de procesar la tarjeta.",
+                "amex_not_supported": "Pagos de AMEX no están soportados aún pero lo serán pronto.",
+                "amex_not_supported_purchaser": "Pagos de AMEX no están soportados aún pero lo serán pronto.",
+                "bbva_visa": "BBVA Bancomer no permite tarjetas de débito Visa para compras en línea.",
+                "bbva_visa_purchaser": "BBVA Bancomer no permite tarjetas de débito Visa para compras en línea.",
+                "banorte_visa": "Banorte no permite tarjetas de débito Visa para compras en línea.",
+                "banorte_visa_purchaser": "Banorte no permite tarjetas de débito Visa para compras en línea.",
+                "ixe_debito": "IXE no permite tarjetas de débito para compras en línea.",
+                "ixe_debito_purchaser": "IXE no permite tarjetas de débito para compras en línea.",
+                "azteca_credito": "Banco Azteca no permite tarjetas de crédito para compras en línea.",
+                "azteca_credito_purchaser": "Banco Azteca no permite tarjetas de crédito para compras en línea.",
+                "inbursa_credito": "Grupo Financiero Inbursa no permite tarjetas de crédito para compras en línea.",
+                "inbursa_credito_purchaser": "Grupo Financiero Inbursa no permite tarjetas de crédito para compras en línea.",
+                "suspicious_behaviour": "Este cargo ha sido declinado porque el comportamiento del comprador es sospechoso.",
+                "suspicious_behaviour_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",}
+            "cash_payment":{
+                "barcode": "No se pudo generar el código de barras.",
+                "barcode_purchaser": "No se pudo generar el código de barras.",}
+            "oxxo_payment":{
+                "service_unavailable": "OXXO no pudo generar el código de barras.",
+                "service_unavailable_purchaser": "OXXO no pudo generar el código de barras, por favor intenta más tarde.",
+                "merchant_not_available": "Cliente no disponible",
+                "merchant_not_available_purchaser": "Cliente no disponible",
+                "merchant_after_hours": "Fuera del horario de servicio",
+                "merchant_after_hours_purchaser": "Fuera del horario de servicio",
+                "reference_not_found": "Referencia no encontrada",
+                "reference_not_found_purchaser": "Referencia no encontrada",
+                "inactive_reference": "Referencia inactiva",
+                "inactive_reference_purchaser": "Referencia inactiva",
+                "canceled_reference": "Referencia cancelada",
+                "canceled_reference_purchaser": "Referencia cancelada",
+                "user_blocked": "Usuario bloqueado",
+                "user_blocked_purchaser": "Usuario bloqueado",
+                "invalid_amount": "Monto invalido",
+                "invalid_amount_purchaser": "Monto invalido",
+                "not_authorized": "No autorizado por el cliente",
+                "not_authorized_purchaser": "No autorizado por el cliente",}
+            "oxxo_recurrent":{
+                "not_payable": "La petición fue considerada como no pagable.",
+                "not_payable_purchaser": "La petición fue considerada como no pagable.",
+                "not_reversable": "El cargo no puede ser reversado.",
+                "not_reversable_purchaser": "El cargo no puede ser reversado.",}
+            "spei_payment":{
+                "charge_is_already_paid": "El pago no pudo ser procesado porque el cargo ya ha sido pagado.",
+                "charge_is_expired": "El pago no pudo ser procesado porque el cargo ya ha expirado.",
+                "charge_is_canceled": "El pago no pudo ser procesado porque el cargo fue cancelado.",
+                "invalid_amount": "El pago no pudo ser procesado porque el monto es invalido.",}
+            "payment":{
+            "general_failure": "El pago no pudo ser creado.",
+            "general_failure_purchaser": "El pago no pudo ser creado.",
+            "general_failure": "El objeto %{entity} no pudo ser creado o guardado.",
+            "general_failure_purchaser": "El pago no pudo ser creado.",
+            "chargeback_destroyed": "El contracargo para el cargo %{charge} ya está en revisión y no puede ser eliminado.",
+            "chargeback_destroyed_purchaser": "El contracargo para el cargo %{charge} ya está en revisión y no puede ser eliminado.",
+            "chargeback_due_date": "La fecha para proveer evidencia para este contracargo ha expirado y no se puede realizar más actualizaciones.",
+            "chargeback_due_date_purchaser": "La fecha para proveer evidencia para este contracargo ha expirado y no se puede realizar más actualizaciones.",}
+            "request":{
+            "json": "JSON mal formado.",
+            "json_purchaser": "Hubo un error de procesamiento.",}
+            "tokenization":{
+            "no_js_agent": "Solamente podemos procesar datos de tarjetas que han sido tokenizadas o que provengan de sitios seguros que cumplan los estándares de PCI. Si su sitio cumple con los estándares, envíe una copia de su certificado PCI a contacto@conekta.io y pida acceso.",
+            "no_js_agent_purchaser": "Solamente podemos procesar datos de tarjetas que han sido tokenizadas o que provengan de sitios seguros que cumplan los estándares de PCI.",
+            "used": "El token ya ha sido utilizado.",
+            "used_purchaser": "La tarjeta no pudo ser procesada.",
+            "charge_operations":
+            "already_paid": "La referencia ya fue pagada.",
+            "already_paid_purchaser": "La referencia ya fue pagada.",
+            "canceled": "Referencia cancelada, favor de obtener una nueva"
+            "canceled_purchaser": "Referencia cancelada, favor de obtener una nueva"
+            "general_failure": "El cargo no existe o no es apto para esta operación.",
+            "general_failure_purchaser": "El cargo no existe o no es apto para esta operación.",
+            "invalid_operation": "La operación es inválida o no existe.",
+            "invalid_operation_purchaser": "La operación es inválida o no existe.",}
+            "refund":{
+                "pending_payment": "El cargo no ha sido pagado, y por eso no puede ser reembolsado.",
+                "pending_payment_purchaser": "El cargo no ha sido pagado, y por eso no puede ser reembolsado.",
+                "charged_back": "Este cargo tiene un contracargo y no puede ser reembolsado.",
+                "charged_back_purchaser": "Este cargo tiene un contracargo y no puede ser reembolsado.",
+                "refunded": "El cargo ya fue reembolsado.",
+                "refunded_purchaser": "El cargo ya fue reembolsado.",
+                "preauthorized": "El cargo está preautorizado, utiliza "void" para cancelarla.",
+                "preauthorized_purchaser": "El cargo está preautorizado, utiliza "void" para cancelarla.",
+                "amount_exceeds_charge_value": "El monto a reembolsar excede el monto del cargo.",
+                "amount_exceeds_charge_value_purchaser": "El monto a reembolsar excede el monto del cargo.",
+                "too_old": "El cargo es demasiado viejo para hacer reembolsado.",
+                "too_old_purchaser": "El cargo es demasiado viejo para hacer reembolsado.",
+                "partial_international": "Devoluciones parciales no pueden ser realizados para tarjetas internacionales.",
+                "partial_international_purchaser": "Devoluciones parciales no pueden ser realizados para tarjetas internacionales.",
+                "insufficient_balance": "No tienes saldo sufficiente para realizar este devolución.",
+                "insufficient_balance_purchaser": "No tienes saldo sufficiente para realizar este devolución.",}
+            "company":{
+            "already_active": "Esta empresa ya está activada.",
+            "already_active_purchaser": "Esta empresa ya está activada.",
+            "not_yet_verified": "Esta empresa aún no ha sido verificada.",
+            "not_yet_verified_purchaser": "Esta empresa aún no ha sido verificada.",}
+            "fiscal_info":{
+                "contracts": "No se han subido los contratos firmados de esta empresa.",
+                "contracts_purchaser": "No se han subido los contratos firmados.",}
+        "resource_not_found":{
+            "general_failure": "El recurso no ha sido encontrado.",
+            "general_failure_purchaser": "El recurso no ha sido encontrado.",
+            "unknown_route": "La ruta de tu petición no ha sido encontrada.",
+            "unknown_route_purchaser": "La ruta de tu petición no ha sido encontrada.",
+            "entity": "El objeto %{entity} no pudo ser encontrado.",
+            "entity_purchaser": "El recurso no ha sido encontrado.",
+            "relation": "El objeto %{key} no pudo ser encontrado para %{value}.",
+            "relation_purchaser": "El recurso no ha sido encontrado.",
+            "model": "El modelo %{model} no pudo ser encontrado.",
+            "model_purchaser": "El recurso no ha sido encontrado.",
+            "event": "El evento %{event} no fue encontrado.",
+            "event_purchaser": "El recurso no ha sido encontrado.",
+            "plan": "El plan %{entity} no pudo ser encontrado.",
+            "plan_purchaser": "El plan no pudo ser encontrado.",
+            "customer_card": "El cliente %{customer} no tiene la tarjeta %{card}.",
+            "customer_card_purchaser": "El cliente no ha sido encontrado.",
+            "charge": "El cargo %{charge} no ha sido encontrado.",
+            "charge_purchaser": "El cargo no ha sido encontrado.",
+            "customer": "El cliente %{customer} no ha sido encontrado.",
+            "customer_purchaser": "El cliente no ha sido encontrado.",
+            "card_customer": "La tarjeta %{card} no fue encontrada para el cliente %{customer}.",
+            "card_customer_purchaser": "La tarjeta no ha sido encontrada.",
+            "card_payment": "El cargo de la tarjeta %{card_payment} no pudo ser encontrado.",
+            "card_payment_purchaser": "El cargo de la tarjeta especificada no ha sido encontrado.",
+            "subscription": "La suscripción para el cliente %{customer} no pudo ser encontrada.",
+            "subscription_purchaser": "La suscripción no ha sido encontrada.",
+            "chargeback": "El contracargo para el cargo %{charge} no fue encontrado.",
+            "chargeback_purchaser": "El contracargo no ha sido encontrado.",
+            "payee": "El beneficiario %{payee} no fue encontrado.",
+            "payee_purchaser": "El beneficiario no ha sido encontrado.",
+            "chargeback_file": "El archivo %{chargeback_file} del cargo %{charge} no fue encontrado.",
+            "chargeback_file_purchaser": "El archivo no ha sido encontrado.",
+            "company_file": "El archivo %{company_file} no fue encontrado.",
+            "company_file_purchaser": "El archivo no ha sido encontrado.",}
+        "devise":{
+        "mailer":{
+            "confirmation_instructions":{
+            "subject": "Confirma tu nuevo correo de acceso en Conekta"}}}
+        "webhook":{
+        "error":
+            {"communication_error_message_title": "Error de comunicación con webhook",
+            "communication_error_message_body": "No podemos establecer la conexión con el webhook: %{webhook_url}",
+            "webhook_not_found": "Webhook no esta suscrito a este evento.",
+            "webhook_not_found_purchaser": "Webhook no esta suscrito a este evento.",}}
+        "month_numbers":{
+        "1": "Enero",
+        "2": "Febrero",
+        "3": "Marzo",
+        "4": "Abril",
+        "5": "Mayo",
+        "6": "Junio",
+        "7": "Julio",
+        "8": "Agosto",
+        "9": "Septiembre",
+        "10": "Octubre",
+        "11": "Noviembre",
+        "12": "Diciembre",
     }
+        "antifraud":{
+        "declination_rules":
+{            "velocity": "El usuario está realizando compras a muy alta velocidad.",
+            "chargebacks": "El usuario está asociado a uno o más contracargos en la plataforma de Conekta.",
+            "many_cards": "El usuario intentó comprar con un número  elevado de tarjetas de crédito y/o débito",
+            "multiple_data": "El usuario está asociado a varios números telefónicos y/o cuentas de correo electrónico.",
+            "multiple_devices": "El usuario está asociado a un número inusualmente alto de dispositivos electrónicos desde los cuales ha intentado realizar pagos en la plataforma de Conekta.",
+            "invalid_email": "El usuario está utilizando un correo o dominio de correo electrónico que es anónimo, desechable o inexistente.",
+            "riskbin": "El usuario ha utilizado un tipo de tarjeta que está asociado a intentos de fraude en la plataforma de Conekta.",
+            "ip_address": "El usuario ha utilizado una IP asociada a intentos de fraude en la plataforma de Conekta.",
+            "bad_address": "El usuario ha utilizado una dirección de envío asociada a intentos de fraude o contracargos en la plataforma de Conekta.",
+            "blacklist": "El usuario está registrado en la base de datos de usuarios fraudulentos o sospechosos de la plataforma de Conekta (blacklist).",
+            "score": "El usuario tiene un comportamiento sospechoso de fraude.",
+            "test_card": "El usuario está utilizando una tarjeta de crédito o débito de prueba en modo producción.",}
+    }}
+}
 }
