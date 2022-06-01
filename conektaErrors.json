@@ -507,10 +507,10 @@
                 "models":{
                     "company":{
                         "attributes":{
-                        "name":
-                            "blank": "Nombre de empresa está vacío.",
-                        "antifraud_vertical":
-                            "inclusion": "Ingresa una vertical de antifraude."
+                        "name":{
+                            "blank": "Nombre de empresa está vacío."},
+                        "antifraud_vertical":{
+                            "inclusion": "Ingresa una vertical de antifraude."}
                         },
                     "company_user":{
                         "attributes":{
@@ -637,45 +637,48 @@
             "declined_failure_code": "card_declined",
             "general_error": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
             "general_error_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
-            "general_error_failure_code": "card_declined"}
-        system:
-            general_failure: "Hubo un error del lado del sistema y los ingenieros de Conekta han sido notificados.",
-            general_failure_purchaser: "Hubo un error del lado del sistema y los ingenieros de Conekta han sido notificados.",
-            general_failure_with_id: "Hubo un error del lado del sistema. Id del error %{id}"
-            general_failure_with_id_purchaser: "Hubo un error del lado del sistema y los ingenieros de Conekta han sido notificados.",
-            timeout: "Esta consulta excedió el límite de tiempo y los ingenieros de Conekta han sido notificados.",
-            timeout_purchaser: "Esta consulta excedió el límite de tiempo y los ingenieros de Conekta han sido notificados.",
-            maintenance: "El sistema está en mantenimiento y estará funcional en breve.",
-            maintenance_purchaser: "El sistema está en mantenimiento y estará funcional en breve.",
-        authentication:
-            tokenization:
-            no_js_agent: "Solamente podemos procesar datos de tarjetas que han sido tokenizadas o que provengan de sitios seguros que cumplan los estándares de PCI. Si su sitio cumple con los estándares, envíe una copia de su certificado PCI a contacto@conekta.io y pida acceso.",
-            no_js_agent_purchaser: "Solamente podemos procesar datos de tarjetas que han sido tokenizadas o que provengan de sitios seguros que cumplan los estándares de PCI.",
-            oauth:
-            token:
-                expired: "El token usado ya ha expirado.",
-                expired_purchaser: "El token usado ya ha expirado.",
-                inactive: "El token usado ya no tiene acceso a la cuenta.",
-                inactive_purchaser: "El token usado ya no tiene acceso a la cuenta.",
-            inactive_company: "Acceso no autorizado, esta compañía no está activada.",
-            inactive_company_purchaser: "Acceso no autorizado.",
-            unauthorized: "Acceso no autorizado, por favor verifica los permisos de tu llave para esta llamada.",
-            unauthorized_purchaser: "Acceso no autorizado.",
-            sandbox_only: "Llave de acceso es productivo y no puede ser utilizado para llamadas en sandbox.",
-            sandbox_only_purchaser: "Acceso no autorizado.",
-            unrecognized_key: "Llave de acceso no reconocida.",
-            unrecognized_key_purchaser: "Acceso no autorizado.",
-            missing_key: "Por favor incluye tu llave de acceso en la llamada.",
-            missing_key_purchaser: "Acceso no autorizado.",
-            payee:
-            master_account: "Este recipiente contiene los datos de depósito de la empresa y no pueden ser modificados.",
-            master_account_purchaser: "Este recipiente contiene los datos de depósito de la empresa y no pueden ser modificados.",
-        conflict:
-            version:
-            unsupported: ""%{version}" no es una versión aceptada.",
-            unsupported_purchaser: "La petición no pudo ser completada.",
-            unspecified: "La versión de la API debe especificarse en el encabezado "Accept".",
-            unspecified_purchaser: "La petición no pudo ser completada.",
+            "general_error_failure_code": "card_declined"},
+        "system":{
+            "general_failure": "Hubo un error del lado del sistema y los ingenieros de Conekta han sido notificados.",
+            "general_failure_purchaser": "Hubo un error del lado del sistema y los ingenieros de Conekta han sido notificados.",
+            "general_failure_with_id": "Hubo un error del lado del sistema. Id del error %{id}",
+            "general_failure_with_id_purchaser": "Hubo un error del lado del sistema y los ingenieros de Conekta han sido notificados.",
+            "timeout": "Esta consulta excedió el límite de tiempo y los ingenieros de Conekta han sido notificados.",
+            "timeout_purchaser": "Esta consulta excedió el límite de tiempo y los ingenieros de Conekta han sido notificados.",
+            "maintenance": "El sistema está en mantenimiento y estará funcional en breve.",
+            "maintenance_purchaser": "El sistema está en mantenimiento y estará funcional en breve."},
+        "authentication":{
+            "tokenization":{
+            "no_js_agent": "Solamente podemos procesar datos de tarjetas que han sido tokenizadas o que provengan de sitios seguros que cumplan los estándares de PCI. Si su sitio cumple con los estándares, envíe una copia de su certificado PCI a contacto@conekta.io y pida acceso.",
+            "no_js_agent_purchaser": "Solamente podemos procesar datos de tarjetas que han sido tokenizadas o que provengan de sitios seguros que cumplan los estándares de PCI."},
+            "oauth":{
+                "token":{
+                    "expired": "El token usado ya ha expirado.",
+                    "expired_purchaser": "El token usado ya ha expirado.",
+                    "inactive": "El token usado ya no tiene acceso a la cuenta.",
+                    "inactive_purchaser": "El token usado ya no tiene acceso a la cuenta."}
+                },
+            "inactive_company": "Acceso no autorizado, esta compañía no está activada.",
+            "inactive_company_purchaser": "Acceso no autorizado.",
+            "unauthorized": "Acceso no autorizado, por favor verifica los permisos de tu llave para esta llamada.",
+            "unauthorized_purchaser": "Acceso no autorizado.",
+            "sandbox_only": "Llave de acceso es productivo y no puede ser utilizado para llamadas en sandbox.",
+            "sandbox_only_purchaser": "Acceso no autorizado.",
+            "unrecognized_key": "Llave de acceso no reconocida.",
+            "unrecognized_key_purchaser": "Acceso no autorizado.",
+            "missing_key": "Por favor incluye tu llave de acceso en la llamada.",
+            "missing_key_purchaser": "Acceso no autorizado.",
+            "payee":{
+                "master_account": "Este recipiente contiene los datos de depósito de la empresa y no pueden ser modificados.",
+                "master_account_purchaser": "Este recipiente contiene los datos de depósito de la empresa y no pueden ser modificados."}
+        },
+        "conflict":{
+            "version":{
+                "unsupported": "'%{version}' no es una versión aceptada.",
+                "unsupported_purchaser": "La petición no pudo ser completada.",
+                "unspecified": "La versión de la API debe especificarse en el encabezado 'Accept'.",
+                "unspecified_purchaser": "La petición no pudo ser completada."}
+        }
         parameter_validation:
             payment_sources:
             reference:
