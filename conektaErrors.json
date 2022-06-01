@@ -404,66 +404,66 @@
         },
         "geographical_info":{
             "mx":{
-                aguascalientes:
-                code: "ag"
-                aguascalientes:
-                code: "ag"
-                baja_california:
-                code: "bc"
-                baja_california_sur:
-                code: "bs"
-                campeche:
-                code: "cm"
-                chiapas:
-                code: "cs"
-                chihuahua:
-                code: "ch"
-                colima:
-                code: "cl"
-                distrito_federal:
-                code: "df"
-                durango:
-                code: "dg"
-                guanajuato:
-                code: "gt"
-                guerrero:
-                code: "gr"
-                jalisco:
-                code: "jc"
-                estado_de_mexico:
-                code: "me"
-                michoacan:
-                code: "mn"
-                morelos:
-                code: "ms"
-                nayarit:
-                code: "nt"
-                nuevo_leon:
-                code: "nl"
-                oaxaca:
-                code: "oc"
-                puebla:
-                code: "pl"
-                quintana_roo:
-                code: "qr"
-                san_luis_potosi:
-                code: "sp"
-                sinaloa:
-                code: "sl"
-                sonora:
-                code: "sr"
-                tabasco:
-                code: "tb"
-                tamaulipas:
-                code: "ts"
-                tlaxcala:
-                code: "tl"
-                veracruz:
-                code: "vz"
-                yucatan:
-                code: "yn"
-                zacatecas:
-                code: "zs"
+                "aguascalientes":{
+                "code": "ag"},
+                "aguascalientes":{
+                "code": "ag"},
+                "baja_california":{
+                "code": "bc"},
+                "baja_california_sur":{
+                "code": "bs"},
+                "campeche":{
+                "code": "cm"},
+                "chiapas":{
+                "code": "cs"},
+                "chihuahua":{
+                "code": "ch"},
+                "colima":{
+                "code": "cl"},
+                "distrito_federal":{
+                "code": "df"},
+                "durango":{
+                "code": "dg"},
+                "guanajuato":{
+                "code": "gt"},
+                "guerrero":{
+                "code": "gr"},
+                "jalisco":{
+                "code": "jc"},
+                "estado_de_mexico":{
+                "code": "me"},
+                "michoacan":{
+                "code": "mn"},
+                "morelos":{
+                "code": "ms"},
+                "nayarit":{
+                "code": "nt"},
+                "nuevo_leon":{
+                "code": "nl"},
+                "oaxaca":{
+                "code": "oc"},
+                "puebla":{
+                "code": "pl"},
+                "quintana_roo":{
+                "code": "qr"},
+                "san_luis_potosi":{
+                "code": "sp"},
+                "sinaloa":{
+                "code": "sl"},
+                "sonora":{
+                "code": "sr"},
+                "tabasco":{
+                "code": "tb"},
+                "tamaulipas":{
+                "code": "ts"},
+                "tlaxcala":{
+                "code": "tl"},
+                "veracruz":{
+                "code": "vz"},
+                "yucatan":{
+                "code": "yn"},
+                "zacatecas":{
+                "code": "zs"}
             },
         "models":{
             "transaction":{
@@ -572,72 +572,72 @@
             },
         "error":{
             "metrics":{
-                "param_operations_required": "El parámetro "operations" es requerido.",
-                "param_collection_required": "El parámetro "collection" es requerido.",
+                "param_operations_required": "El parámetro 'operations' es requerido.",
+                "param_collection_required": "El parámetro 'collection' es requerido.",
                 "param_start_required": "El parámetro 'start' es requerido.",
                 "param_end_required": "El parámetro 'end' es requerido."
             }
-        }
-        charge_processing:
-            empty_provider: "Este cargo no se puede procesar por ningún procesador de pagos.",
-        bank:
-            communication_error: "Hubo un problema de procesamiento. Intente de nuevo.",
-            communication_error_purchaser: "Hubo un problema de procesamiento. Intente de nuevo.",
-            communication_error_failure_code: "card_declined"
-            call_issuer: "la tarjeta fue fue rechazada por el banco, llame a su banco.",
-            call_issuer_purchaser: "la tarjeta fue fue rechazada por el banco, llame a su banco.",
-            call_issuer_failure_code: "card_declined"
-            invalid_merchant: "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
-            invalid_merchant_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
-            invalid_merchant_failure_code: "card_declined"
-            invalid_transaction: "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
-            invalid_transaction_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
-            invalid_transaction_failure_code: "card_declined"
-            card_not_supported: "La tarjeta no es soportada.",
-            card_not_supported_purchaser: "La tarjeta no es soportada.",
-            card_not_supported_failure_code: "card_declined"
-            insufficient_funds: "Esta tarjeta no tiene suficientes fondos para completar la compra.",
-            insufficient_funds_purchaser: "Esta tarjeta no tiene suficientes fondos para completar la compra.",
-            insufficient_funds_failure_code: "insufficient_funds"
-            invalid_card: "La tarjeta no es soportada.",
-            invalid_card_purchaser: "La tarjeta no es soportada.",
-            invalid_card_failure_code: "card_declined"
-            expired_card: "La tarjeta ha expirado.",
-            expired_card_purchaser: "La tarjeta ha expirado.",
-            expired_card_failure_code: "card_declined"
-            invalid_card_security_code: "El código de seguridad es inválido.",
-            invalid_card_security_code_purchaser: "El código de seguridad es inválido.",
-            invalid_card_security_code_failure_code: "card_declined"
-            invalid_affiliation: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            invalid_affiliation_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            invalid_affiliation_failure_code: "card_declined"
-            format_error:  "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            format_error_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            format_error_failure_code: "card_declined"
-            restricted_card: "La tarjeta no es soportada.",
-            restricted_card_purchaser: "La tarjeta no es soportada.",
-            restricted_card_failure_code: "card_declined"
-            pick_up_card: "El banco ha idicado que la tarjeta debe ser regresada y por ello la compra no pudo ser procesada.",
-            pick_up_card_purchaser: "El banco ha idicado que la tarjeta debe ser regresada y por ello la compra no pudo ser procesada.",
-            pick_up_card_failure_code: "stolen_card"
-            transaction_not_permitted: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            transaction_not_permitted_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            transaction_not_permitted_failure_code: "card_declined"
-            over_limit: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            over_limit_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            over_limit_failure_code: "card_declined"
-            timeout: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            timeout_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            timeout_failure_code: "card_declined"
-            prevention_fraud: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            prevention_fraud_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
-            prevention_fraud_failure_code: "suspected_fraud"
-            declined: "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
-            declined_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
-            declined_failure_code: "card_declined"
-            general_error: "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
-            general_error_purchaser: "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
-            general_error_failure_code: "card_declined"
+        },
+        "charge_processing":{
+            "empty_provider": "Este cargo no se puede procesar por ningún procesador de pagos."},
+        "bank":{
+            "communication_error": "Hubo un problema de procesamiento. Intente de nuevo.",
+            "communication_error_purchaser": "Hubo un problema de procesamiento. Intente de nuevo.",
+            "communication_error_failure_code": "card_declined",
+            "call_issuer": "la tarjeta fue fue rechazada por el banco, llame a su banco.",
+            "call_issuer_purchaser": "la tarjeta fue fue rechazada por el banco, llame a su banco.",
+            "call_issuer_failure_code": "card_declined",
+            "invalid_merchant": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
+            "invalid_merchant_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
+            "invalid_merchant_failure_code": "card_declined",
+            "invalid_transaction": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
+            "invalid_transaction_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
+            "invalid_transaction_failure_code": "card_declined",
+            "card_not_supported": "La tarjeta no es soportada.",
+            "card_not_supported_purchaser": "La tarjeta no es soportada.",
+            "card_not_supported_failure_code": "card_declined",
+            "insufficient_funds": "Esta tarjeta no tiene suficientes fondos para completar la compra.",
+            "insufficient_funds_purchaser": "Esta tarjeta no tiene suficientes fondos para completar la compra.",
+            "insufficient_funds_failure_code": "insufficient_funds",
+            "invalid_card": "La tarjeta no es soportada.",
+            "invalid_card_purchaser": "La tarjeta no es soportada.",
+            "invalid_card_failure_code": "card_declined",
+            "expired_card": "La tarjeta ha expirado.",
+            "expired_card_purchaser": "La tarjeta ha expirado.",
+            "expired_card_failure_code": "card_declined",
+            "invalid_card_security_code": "El código de seguridad es inválido.",
+            "invalid_card_security_code_purchaser": "El código de seguridad es inválido.",
+            "invalid_card_security_code_failure_code": "card_declined",
+            "invalid_affiliation": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "invalid_affiliation_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "invalid_affiliation_failure_code": "card_declined",
+            "format_error":  "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "format_error_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "format_error_failure_code": "card_declined",
+            "restricted_card": "La tarjeta no es soportada.",
+            "restricted_card_purchaser": "La tarjeta no es soportada.",
+            "restricted_card_failure_code": "card_declined",
+            "pick_up_card": "El banco ha idicado que la tarjeta debe ser regresada y por ello la compra no pudo ser procesada.",
+            "pick_up_card_purchaser": "El banco ha idicado que la tarjeta debe ser regresada y por ello la compra no pudo ser procesada.",
+            "pick_up_card_failure_code": "stolen_card",
+            "transaction_not_permitted": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "transaction_not_permitted_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "transaction_not_permitted_failure_code": "card_declined",
+            "over_limit": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "over_limit_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "over_limit_failure_code": "card_declined",
+            "timeout": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "timeout_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "timeout_failure_code": "card_declined",
+            "prevention_fraud": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "prevention_fraud_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta mas tarde.",
+            "prevention_fraud_failure_code": "suspected_fraud",
+            "declined": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
+            "declined_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
+            "declined_failure_code": "card_declined",
+            "general_error": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
+            "general_error_purchaser": "La tarjeta ingresada ha sido declinada. Por favor intenta con otro método de pago.",
+            "general_error_failure_code": "card_declined"}
         system:
             general_failure: "Hubo un error del lado del sistema y los ingenieros de Conekta han sido notificados.",
             general_failure_purchaser: "Hubo un error del lado del sistema y los ingenieros de Conekta han sido notificados.",
