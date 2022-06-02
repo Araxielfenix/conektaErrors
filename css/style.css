@@ -11,10 +11,12 @@ body{
 }
 .div-Logo{
     position: relative;
-    margin: 30vw 19vw;
+}
+.conekta-logo{
+    width: 50vw;
+    position: fixed;
 }
 .css-input {
-    margin: auto;
     margin-top: 12vw;
     width: 48vw;
     padding: 5px;
