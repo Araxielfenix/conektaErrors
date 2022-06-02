@@ -18,9 +18,9 @@ body{
     position: relative;
 }
 .css-input {
-    margin-top: 12vw;
+    margin-top: 1vw;
     width: 49.5vw;
-    padding: 5px;
+    padding: 20px;
     font-size: 16px;
     border-width: 1px;
     border-color: #ffffff;
