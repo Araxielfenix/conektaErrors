@@ -1,4 +1,3 @@
-var errorInput = document.getElementById("css-input").value;
 /**
  * It takes a string, turns it into an object, then searches for the string in the object, and returns
  * the error message.
@@ -19,5 +18,6 @@ function getError(errorInput){
 }
 // e.keypress in the css-input field.
 document.getElementById("css-input").addEventListener("keypress", function(e){
+    var errorInput = document.getElementById("css-input").value;
     getError();
 });
