@@ -14,9 +14,9 @@ body{
     margin: 30vw 19vw;
 }
 .css-input {
-    margin: 12vw -1vw;
-    position: relative;
-    width: 47vw;
+    margin: auto;
+    margin-top: 12vw;
+    width: 48vw;
     padding: 5px;
     font-size: 16px;
     border-width: 1px;
