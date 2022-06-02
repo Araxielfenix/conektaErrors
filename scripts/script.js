@@ -19,5 +19,5 @@ function getError(errorInput){
 // e.keypress in the css-input field.
 document.getElementById("css-input").addEventListener("keypress", function(e){
     var errorInput = document.getElementById("css-input").value;
-    getError();
+    getError(errorInput);
 });
