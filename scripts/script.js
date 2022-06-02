@@ -13,6 +13,7 @@ function getError(errorInput){
         if (errorObject.errors[i].message.indexOf(errorInput) > -1) {
             // Return the error message.
             return errorObject.errors[i].message;
+            console.log(errorObject.errors[i].message);
         }
     }
 }
