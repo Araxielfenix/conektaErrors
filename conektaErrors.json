@@ -1005,7 +1005,7 @@
                             "relation": "'%{key}' no es un campo válido para '%{value}'.",
                             "relation_purchaser": "La consulta para búsqueda no es válida.",
                             "unrecognized_relation": "'%{key}' no es un campo reconocido para '%{value}'.",
-                            "unrecognized_relation_purchaser": "La consulta para búsqueda no es válida.",
+                            "unrecognized_relation_purchaser": "La consulta para búsqueda no es válida."
                         },
                         "id": {
                             "general_failure": "El formato para %{entity} es inválido.",
