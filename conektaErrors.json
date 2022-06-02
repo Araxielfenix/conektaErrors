@@ -905,10 +905,6 @@
                             "cannot_update_invalid_charges_to_void": "La orden no contiene cargos validos.",
                             "cannot_update_invalid_charges_to_void_purchaser": "La orden no contiene cargos validos."
                         },
-                        "charge": {
-                            "invalid_default_payment_method": "El usuario no tiene un metodo de pago por default valido.",
-                            "invalid_default_payment_method_purchaser": "El usuario no tiene un metodo de pago por default valido."
-                        },
                         "webhook": {
                             "url": "El URL del Webhook es invalido.",
                             "url_purchaser": "El URL del Webhook es invalido.",
@@ -1010,8 +1006,6 @@
                             "relation_purchaser": "La consulta para búsqueda no es válida.",
                             "unrecognized_relation": "'%{key}' no es un campo reconocido para '%{value}'.",
                             "unrecognized_relation_purchaser": "La consulta para búsqueda no es válida.",
-                            "general_failure": "Hubo un error de validación.",
-                            "general_failure_purchaser": "Hubo un error de validación."
                         },
                         "id": {
                             "general_failure": "El formato para %{entity} es inválido.",
@@ -1030,8 +1024,6 @@
                         "card": {
                             "token": "Solo puedes actualizar una tarjeta mandando el atributo de 'token_id' o 'active'.",
                             "token_purchaser": "Solo puedes actualizar una tarjeta usando el atributo de 'token_id' o 'active'.",
-                            "token_id": "Solo puedes actualizar una tarjeta mandando el atributo de 'token_id' o 'active'.",
-                            "token_id_purchaser": "Solo puedes actualizar una tarjeta usando el atributo de 'token_id' o 'active'.",
                             "card_id": "La tarjeta no esta asociada al cliente.",
                             "card_id_purchaser": "La tarjeta no esta asociada al cliente.",
                             "name": "El nombre del tarjetahabiente es inválido.",
@@ -1050,26 +1042,10 @@
                             "exp_month_purchaser": "El mes de expiración es inválido.",
                             "exp_year": "El año de expiración es inválido.",
                             "exp_year_purchaser": "El año de expiración es inválido.",
-                            "token": "Solo puedes actualizar una tarjeta mandando el atributo de 'token_id' o 'active'.",
-                            "token_purchaser": "Solo puedes actualizar una tarjeta usando el atributo de 'token_id' o 'active'.",
                             "token_device_fingerprint_too_long": "El valor de `device_fingerprint` puede ser máximo 250 carácteres.",
                             "token_device_fingerprint_too_long_purchaser": "Hubo un error de procesamiento, intenta otra vez.",
                             "token_id": "Solo puedes actualizar una tarjeta mandando el atributo de 'token_id' o 'active'.",
-                            "token_id_purchaser": "Solo puedes actualizar una tarjeta usando el atributo de 'token_id' o 'active'.",
-                            "name": "El nombre del tarjetahabiente es inválido.",
-                            "name_purchaser": "El nombre del tarjetahabiente es inválido.",
-                            "expired": "La tarjeta ha expirado.",
-                            "expired_purchaser": "La tarjeta ha expirado.",
-                            "number": "El número de la tarjeta es inválido.",
-                            "number_purchaser": "El número de la tarjeta es inválido.",
-                            "unexistent_number": "El número indica una tarjeta inexistente.",
-                            "unexistent_number_purchaser": "El número indica una tarjeta inexistente.",
-                            "cvc": "El cvc (código de seguridad) de la tarjeta es inválido.",
-                            "cvc_purchaser": "El cvc (código de seguridad) de la tarjeta es inválido.",
-                            "exp_month": "El mes de expiración es inválido.",
-                            "exp_month_purchaser": "El mes de expiración es inválido.",
-                            "exp_year": "El año de expiración es inválido.",
-                            "exp_year_purchaser": "El año de expiración es inválido."
+                            "token_id_purchaser": "Solo puedes actualizar una tarjeta usando el atributo de 'token_id' o 'active'."
                         },
                         "subscription": {
                             "trial_end": "Fecha de trial_end inválida.",
@@ -1252,7 +1228,9 @@
                             "minimum_amount_card_purchaser": "El mínimo para pagos de tarjeta es de 3 pesos.",
                             "expires_at": "La fecha enviada ya ha pasado.",
                             "expires_at_purchaser": "La fecha enviada ya ha pasado.",
-                            "invalid_test_card": "Tarjeta de prueba invalida"
+                            "invalid_test_card": "Tarjeta de prueba invalida",
+                            "invalid_default_payment_method": "El usuario no tiene un metodo de pago por default valido.",
+                            "invalid_default_payment_method_purchaser": "El usuario no tiene un metodo de pago por default valido."
                         },
                         "details": {
                             "name": "Falta el nombre del comprador en el campo 'details'.",
@@ -1423,11 +1401,6 @@
                     "subscription": {
                         "cannot_pause": "No se puede pausar la suscripción",
                         "cannot_pause_purchaser": "No se puede pausar la suscripción."
-                    },
-                    "antifraud": {
-                        "connection_error": "Hubo un problema durante la conexión al servicio antifraude.",
-                        "connection_error_purchaser": "Hubo un problema durante la conexión al servicio antifraude.",
-                        "connection_error_failure_code": "antifraud_connection_error"
                     },
                     "charge": {
                         "card_payment": {
@@ -1607,6 +1580,9 @@
                         "12": "Diciembre"
                     },
                     "antifraud": {
+                        "connection_error": "Hubo un problema durante la conexión al servicio antifraude.",
+                        "connection_error_purchaser": "Hubo un problema durante la conexión al servicio antifraude.",
+                        "connection_error_failure_code": "antifraud_connection_error",
                         "declination_rules": {
                             "velocity": "El usuario está realizando compras a muy alta velocidad.",
                             "chargebacks": "El usuario está asociado a uno o más contracargos en la plataforma de Conekta.",
