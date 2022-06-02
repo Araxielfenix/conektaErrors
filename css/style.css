@@ -1,5 +1,6 @@
 body{
     background-color: #d8d9de;
+    text-align: center;
 }
 /* Media para escritorio */
 @media only screen and (min-width: 768px){
