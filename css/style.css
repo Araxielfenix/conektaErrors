@@ -15,7 +15,7 @@ body{
 }
 .conekta-logo {
     width: 50vw;
-    position: fixed;
+    position: relative;
 }
 .css-input {
     margin-top: 12vw;
