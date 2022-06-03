@@ -12,9 +12,6 @@ body{
 }
 .div-Logo{ 
     position: relative;
-    display: inline-block;
-}
-.conekta-logo {
     width: 50vw;
 }
 .css-input {
