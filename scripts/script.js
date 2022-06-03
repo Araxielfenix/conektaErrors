@@ -22,3 +22,9 @@ document.getElementById("css-input").addEventListener("keypress", function(e){
     var errorInput = document.getElementById("css-input").value;
     getError(errorInput);
 });
+
+document.getElementById("demo").addEventListener("keypress", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").style.backgroundColor = "red";
+}
